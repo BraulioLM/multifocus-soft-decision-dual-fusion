@@ -16,10 +16,10 @@ except ImportError:
 # =========================================================
 # 2) PATHS
 # =========================================================
-lytro_root_dir = os.path.expanduser("~/Documentos/Lytro/Lytro/sourceimages/color")
+lytro_root_dir = os.path.join(os.path.dirname(__file__), "data", "lytro", "color")
 
 # Outputs
-output_dir = os.path.join(lytro_root_dir, "Tenengrad_Fusion_Results_Lytro")
+output_dir = os.path.join(os.path.dirname(__file__), "outputs", "lytro")
 os.makedirs(output_dir, exist_ok=True)
 
 # Save fused images and intermediate maps.
