@@ -20,12 +20,12 @@ except ImportError:
 # ├── source_1/
 # ├── source_2/
 # └── full_clear/   # not required for fusion, only part of the original dataset
-root_dir = os.path.expanduser("~/Documentos/MFI-WHU")
+root_dir = os.path.join(os.path.dirname(__file__), "data", "mfi_whu")
 
 source_1_dir = os.path.join(root_dir, "source_1")
 source_2_dir = os.path.join(root_dir, "source_2")
 
-output_dir = os.path.join(root_dir, "tenengrad_fusion_results")
+output_dir = os.path.join(os.path.dirname(__file__), "outputs", "mfi_whu")
 os.makedirs(output_dir, exist_ok=True)
 
 # Output folders
